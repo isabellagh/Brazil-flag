@@ -1,0 +1,137 @@
+.flag {
+  position: relative;
+  background-color: #16b83e;
+  width: 250px;
+  height: 150px;
+}
+
+.flag .rhombus:before,
+.flag .rhombus:after {
+  position: absolute;
+}
+
+.flag .rhombus {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.flag .rhombus:before,
+.flag .rhombus:after {
+  content: "";
+  width: 0;
+  height: 0;
+  left: 20px;
+  right: 20px;
+}
+
+.flag .rhombus:before {
+  border-left: 105px solid transparent;
+  border-right: 105px solid transparent;
+  border-bottom: 65px solid #ffe11f;
+  top: 10px;
+}
+
+.flag .rhombus:after {
+  border-left: 105px solid transparent;
+  border-right: 105px solid transparent;
+  border-top: 65px solid #ffe11f;
+  bottom: 10px;
+}
+
+.flag .circle {
+  overflow: hidden;
+  z-index: 2;
+  display: block;
+  background-color: #1651b8;
+  height: 80px;
+  width: 80px;
+  margin-top: -40px;
+  margin-left: -40px;
+
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+.flag .circle,
+.flag .circle:before,
+.flag .circle:after {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+.flag .circle:before,
+.flag .circle:after {
+  width: 90px;
+  height: 40px;
+  -ms-transform: rotate(14deg);
+  -webkit-transform: rotate(14deg);
+  transform: rotate(14deg);
+}
+
+.flag .circle:before {
+  z-index: 3;
+  content: "";
+  margin-top: -20px;
+  margin-left: -45px;
+  background: #fff;
+}
+
+.flag .circle:after {
+  z-index: 4;
+  content: "";
+  margin-top: -10px;
+  margin-left: -48px;
+  background-color: #1651b8;
+}
+
+.star {
+    margin: 50px 0;
+    position: relative;
+    display: block;
+    color: whitesmoke;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid whitesmoke;
+    border-left: 100px solid transparent;
+    transform: rotate(35deg);
+  }
+  .star:before {
+    border-bottom: 80px solid whitesmoke;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -45px;
+    left: -65px;
+    display: block;
+    content: '';
+    transform: rotate(-35deg);
+  }
+  .star:after {
+    position: absolute;
+    display: block;
+    color: whitesmoke;
+    top: 3px;
+    left: -105px;
+    width: 0px;
+    height: 0px;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid whitesmoke;
+    border-left: 100px solid transparent;
+    transform: rotate(-70deg);
+    content: '';
+  }
